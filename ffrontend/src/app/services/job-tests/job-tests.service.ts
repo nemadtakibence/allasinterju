@@ -201,7 +201,7 @@ export class JobTestsService {
 
   //------------------------------------
   getProgrammingSolve(kerdoivId: number):Observable<RSolveP>{
-        return this.http.post<RSolveP>( `${this.apiUrl}/Programming/Solve`,{kerdoivId},{withCredentials : true})
+        return this.http.post<RSolveP>( `${this.apiUrl}/Programming/Solve/${kerdoivId}`,{},{withCredentials : true})
     }
 
 
